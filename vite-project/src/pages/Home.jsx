@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
           <p className="text-gray-600 text-lg">
             Experience the ultimate beauty treatment with professional stylists and a relaxing atmosphere.
           </p>
-          <button className="px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300">
+          <button className="px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300 ">
+            <Link to="/book-appointment">
             Book Appointment
+            </Link>
           </button>
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0">

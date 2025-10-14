@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-pink-50 to-white">
       <Navbar />
-      
+
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,3 +22,4 @@ export default function App() {
     </div>
   );
 }
+

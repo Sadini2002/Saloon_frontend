@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BookAppointment from "./BookAppointment";
+import Admin from "./Apointment";
 
 export default function Home() {
   return (
@@ -15,9 +17,16 @@ export default function Home() {
           </p>
           <button className="px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300 ">
             <Link to="/book-appointment">
-            Book Appointment
+            Admin Panel
+            
             </Link>
           </button>
+          <Link
+        to="/admin"
+        className="mt-4 px-6 py-3 bg-gray-700 text-white font-semibold rounded-2xl shadow-lg hover:bg-gray-800 transition-all"
+      >
+        Book Appointment
+      </Link>
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0">
           <img

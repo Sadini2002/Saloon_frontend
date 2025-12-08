@@ -9,6 +9,8 @@ import  Appointment  from "./pages/Apointment";
 import AdminPage from "./pages/admin";
 //import Appointment from "./pages/BookAppointment";
 import ViewAppointments from "../adminPage/viewapointment";
+import EditServices from "../adminPage/editService";
+import ManageStaff from "../adminPage/manageStaff";
 
 export default function App() {
   return (
@@ -23,6 +25,8 @@ export default function App() {
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/admin" element={<AdminPage />} /> 
           <Route path="/view-appointments" element={<ViewAppointments />} />
+          <Route path="/editService" element={<EditServices/>} />
+          <Route path="/manageStaff" element={<ManageStaff/>} />
         </Routes>
       </main>
       <Footer />

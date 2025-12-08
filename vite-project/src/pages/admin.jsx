@@ -1,42 +1,59 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const AdminPage = () => {
+export default function AdminPage() {
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-3xl mx-auto bg-white shadow-md rounded-lg p-6">
-        <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-          Salon Admin Page
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-pink-200 flex justify-center items-center p-6">
+      <div className="max-w-4xl w-full bg-white rounded-3xl shadow-2xl p-8">
+
+        {/* Header */}
+        <h1 className="text-3xl font-bold text-pink-700 text-center mb-10">
+          🌸 Salon Admin Dashboard
         </h1>
 
+        {/* Grid Buttons */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-        <div className="space-y-4">
-          <Link to="/view-appointments">
-
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition" >
-            
-            
-            View Appointments
-            
-          </button>
+          {/* View Appointments */}
+          <Link to="/view-appointments" className="w-full">
+            <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-6 rounded-2xl text-white shadow-lg hover:scale-[1.03] hover:shadow-xl transition transform cursor-pointer">
+              <h2 className="text-xl font-semibold mb-2">📅 View Appointments</h2>
+              <p className="text-sm opacity-90">
+                Check all customer bookings and manage their status.
+              </p>
+            </div>
           </Link>
 
-          <button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition">
-            Add / Edit Services
-          </button>
+          {/* Add / Edit Services */}
+          <Link to="/editService" className="w-full">
+          <div className="bg-gradient-to-r from-green-500 to-green-600 p-6 rounded-2xl text-white shadow-lg hover:scale-[1.03] hover:shadow-xl transition cursor-pointer">
+            <h2 className="text-xl font-semibold mb-2">💅 Add / Edit Services</h2>
+            <p className="text-sm opacity-90">
+              Update salon services, pricing, and categories.
+            </p>
+          </div>
+          </Link>
 
-          <button className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition">
-            Manage Staff
-          </button>
+          {/* Manage Staff */}
+          <Link to="/manageStaff" className="w-full">
+          <div className="bg-gradient-to-r from-purple-500 to-purple-600 p-6 rounded-2xl text-white shadow-lg hover:scale-[1.03] hover:shadow-xl transition cursor-pointer">
+            <h2 className="text-xl font-semibold mb-2">👩‍🦰 Manage Staff</h2>
+            <p className="text-sm opacity-90">
+              Assign roles, schedules, and manage staff info.
+            </p>
+          </div>
+          </Link>
 
-          <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition">
-            Logout
-          </button>
-
+          {/* Logout */}
+          <div className="bg-gradient-to-r from-red-500 to-red-600 p-6 rounded-2xl text-white shadow-lg hover:scale-[1.03] hover:shadow-xl transition cursor-pointer">
+            <h2 className="text-xl font-semibold mb-2">🚪 Logout</h2>
+            <p className="text-sm opacity-90">
+              Securely logout from the admin dashboard.
+            </p>
+          </div>
         </div>
+
       </div>
     </div>
   );
-};
-
-export default AdminPage;
+}

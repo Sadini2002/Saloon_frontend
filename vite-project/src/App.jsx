@@ -11,6 +11,8 @@ import AdminPage from "./pages/admin";
 import ViewAppointments from "../adminPage/viewapointment";
 import EditServices from "../adminPage/editService";
 import ManageStaff from "../adminPage/manageStaff";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
 
 export default function App() {
   return (
@@ -27,6 +29,8 @@ export default function App() {
           <Route path="/view-appointments" element={<ViewAppointments />} />
           <Route path="/editService" element={<EditServices/>} />
           <Route path="/manageStaff" element={<ManageStaff/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<Signup/>} />
         </Routes>
       </main>
       <Footer />

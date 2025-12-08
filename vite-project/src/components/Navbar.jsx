@@ -9,6 +9,8 @@ export default function Navbar() {
         <li><NavLink to="/" className={({isActive}) => isActive ? "text-pink-500" : "hover:text-pink-500"}>Home</NavLink></li>
         <li><NavLink to="/about" className={({isActive}) => isActive ? "text-pink-500" : "hover:text-pink-500"}>About</NavLink></li>
         <li><NavLink to="/contact" className={({isActive}) => isActive ? "text-pink-500" : "hover:text-pink-500"}>Contact</NavLink></li>
+        <li><NavLink to="/login" className={({isActive}) => isActive ? "text-pink-500" : "hover:text-pink-500"}>Login</NavLink></li>
+        <li><NavLink to="/signup" className={({isActive}) => isActive ? "text-pink-500" : "hover:text-pink-500"}>Sign up</NavLink></li>
       </ul>
     </nav>
   );

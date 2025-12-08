@@ -5,8 +5,9 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Admin from "./pages/Apointment"
-import Appointment from "./pages/BookAppointment";
+import  Appointment  from "./pages/Apointment";
+import AdminPage from "./pages/admin";
+//import Appointment from "./pages/BookAppointment";
 
 export default function App() {
   return (
@@ -18,8 +19,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/bookappointment"  element={<Appointment/>}/>
+          <Route path="/appointment" element={<Appointment />} />
+          <Route path="/admin" element={<AdminPage />} /> 
         </Routes>
       </main>
       <Footer />

@@ -10,7 +10,7 @@ export default function Contact() {
         <input type="text" placeholder="Your Name" className="w-full p-3 border rounded-lg focus:outline-pink-500" />
         <input type="email" placeholder="Your Email" className="w-full p-3 border rounded-lg focus:outline-pink-500" />
         <textarea placeholder="Your Message" rows="4" className="w-full p-3 border rounded-lg focus:outline-pink-500"></textarea>
-        <button type="submit" className="w-full bg-pink-500 text-white py-3 rounded-full hover:bg-pink-600 transition">Send Message</button>
+        <button type="submit" className="w-full bg-pink-500 text-white py-3 rounded-full hover:bg-pink-600 transition cursor-pointer">Send Message</button>
       </form>
     </section>
   );

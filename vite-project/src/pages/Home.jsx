@@ -16,17 +16,19 @@ export default function Home() {
             Experience the ultimate beauty treatment with professional stylists and a relaxing atmosphere.
           </p>
           <button className="px-6 py-3 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300 ">
-            <Link to="/book-appointment">
-            Admin Panel
+            <Link to="/admin">
+           Book Appointment 
             
             </Link>
           </button>
+          <button>
           <Link
-        to="/admin"
+        to="/book-appointment"
         className="mt-4 px-6 py-3 bg-gray-700 text-white font-semibold rounded-2xl shadow-lg hover:bg-gray-800 transition-all"
       >
-        Book Appointment
+        Admin Panel
       </Link>
+      </button>
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0">
           <img

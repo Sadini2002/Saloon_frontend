@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Admin from "./pages/Apointment"
-import BookAppointment from "./pages/BookAppointment";
+import Appointment from "./pages/BookAppointment";
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/bookappointment"  element={<BookAppointment/>}/>
+          <Route path="/bookappointment"  element={<Appointment/>}/>
         </Routes>
       </main>
       <Footer />

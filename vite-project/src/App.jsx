@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import  Appointment  from "./pages/Apointment";
 import AdminPage from "./pages/admin";
 //import Appointment from "./pages/BookAppointment";
+import ViewAppointments from "../adminPage/viewapointment";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/admin" element={<AdminPage />} /> 
+          <Route path="/view-appointments" element={<ViewAppointments />} />
         </Routes>
       </main>
       <Footer />

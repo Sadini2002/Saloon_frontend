@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AdminPage = () => {
   return (
@@ -8,11 +9,17 @@ const AdminPage = () => {
           Salon Admin Page
         </h1>
 
-        <div className="space-y-4">
 
-          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition">
+        <div className="space-y-4">
+          <Link to="/view-appointments">
+
+          <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition" >
+            
+            
             View Appointments
+            
           </button>
+          </Link>
 
           <button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition">
             Add / Edit Services
